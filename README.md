@@ -9,18 +9,40 @@
 - Activate it (.venv/Scripts/ativate)
 - Run: python -m empmgr.cli (from root)
 
-
 3. Structure:
->> git status
-*   1358412 (HEAD -> main) Merge department report
+- empmgr-project/ 
+    .gitignore 
+    README.md 
+    requirements.txt 
+    data/ 
+        employees.json 
+    empmgr/ 
+        __init__.py 
+        models.py 
+        validators.py 
+        storage.py 
+        cli.py
+
+3. History:
+>> git log --oneline --graph --all
+* 43d0426 (HEAD -> main, origin/main, origin/feature/readme-polish, origin/HEAD, feature/readme-polish) Added Readme.md
+*   1358412 Merge department report
 |\  
-| * 730e9a0 (feature/report) Export department report functionality
+| * 730e9a0 (origin/feature/report, feature/report) Export department report functionality
+| * f6028c9 Add department summary report
+* |   32f0ce1 Merge validation feature
+|\ \  
+:
+* 43d0426 (HEAD -> main, origin/main, origin/feature/readme-polish, origin/HEAD, feature/readme-polish) Added Readme.md
+*   1358412 Merge department report
+|\  
+| * 730e9a0 (origin/feature/report, feature/report) Export department report functionality
 | * f6028c9 Add department summary report
 * |   32f0ce1 Merge validation feature
 |\ \  
 | |/  
 |/|   
-| * 2776754 (feature/validation) Add email validation
+| * 2776754 (origin/feature/validation, feature/validation) Add email validation
 |/  
 * 1daab0e Add project dependencies
 * 367e34b Add sample employee records
@@ -29,5 +51,4 @@
 * 4f3d43a Add salary input validation
 * 53525f4 Add employee JSON file storage
 * 54a8767 Add employee model to add employee
-On branch main
-nothing to commit, working tree clean
+* e16e0bc First commit of .gitignore

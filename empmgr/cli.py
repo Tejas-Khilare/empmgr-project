@@ -49,9 +49,9 @@ def main() -> None:
                 print("Name and department are required.")
                 continue
 
-            if not is_valid_email(email):
-                print("Invalid email address.")
-                continue
+            # if not is_valid_email(email):
+            #     print("Invalid email address.")
+            #     continue
 
             if salary is None:
                 print("Enter a valid non-negative salary.")

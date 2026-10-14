@@ -3,7 +3,7 @@ from rich.table import Table
 
 from .models import add_employee
 from .storage import load_employees, save_employees
-from .validators import parse_salary
+from .validators import parse_salary , is_valid_email
 console = Console()
 
 
@@ -49,9 +49,9 @@ def main() -> None:
                 print("Name and department are required.")
                 continue
 
-            # if not is_valid_email(email):
-            #     print("Invalid email address.")
-            #     continue
+            if not is_valid_email(email):
+                print("Invalid email address.")
+                continue
 
             if salary is None:
                 print("Enter a valid non-negative salary.")

@@ -1,30 +1,33 @@
-1. PURPOSE
+## PURPOSE
 - Manage employees in JSON file and make operations on it.
 - Create virtual env and install dependencies like rich.
 - Create different branches for features and merge them in main.
 - Create requirements.txt and .gitignore
 
-2. Setup:
+## Setup:
 - create virtual env (python -m venv .venv)
 - Activate it (.venv/Scripts/ativate)
 - Run: python -m empmgr.cli (from root)
 
-3. Structure:
-- empmgr-project/ 
-    .gitignore 
-    README.md 
-    requirements.txt 
-    data/ 
-        employees.json 
-    empmgr/ 
-        __init__.py 
-        models.py 
-        validators.py 
-        storage.py 
+## Project Structure
+```text
+empmgr-project/
+    .gitignore
+    README.md
+    requirements.txt
+    data/
+        employees.json
+    empmgr/
+        __init__.py
+        models.py
+        validators.py
+        storage.py
         cli.py
+```
 
-3. History:
+## Commit History:
 >> git log --oneline --graph --all
+```text
 * 43d0426 (HEAD -> main, origin/main, origin/feature/readme-polish, origin/HEAD, feature/readme-polish) Added Readme.md
 *   1358412 Merge department report
 |\  
@@ -32,14 +35,7 @@
 | * f6028c9 Add department summary report
 * |   32f0ce1 Merge validation feature
 |\ \  
-:
-* 43d0426 (HEAD -> main, origin/main, origin/feature/readme-polish, origin/HEAD, feature/readme-polish) Added Readme.md
-*   1358412 Merge department report
-|\  
-| * 730e9a0 (origin/feature/report, feature/report) Export department report functionality
-| * f6028c9 Add department summary report
-* |   32f0ce1 Merge validation feature
-|\ \  
+
 | |/  
 |/|   
 | * 2776754 (origin/feature/validation, feature/validation) Add email validation
@@ -52,3 +48,4 @@
 * 53525f4 Add employee JSON file storage
 * 54a8767 Add employee model to add employee
 * e16e0bc First commit of .gitignore
+```
